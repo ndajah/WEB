@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="menu" style="font-size:5vw; position:fixed;top:0;width:100%">
+        <a href="#1" onclick="showContentSection('1')">Option 1 </a>
+        <a href="#2" onclick="showContentSection('2')">Option 2 </a>
+        <a href="#3" onclick="showContentSection('3')">Option 3 </a>
+        <a href="#4" onclick="showContentSection('4')">Option 4 </a>
+        <a href="#5" onclick="showContentSection('5')">Option 5 </a>
+    </div>
+    <div id="content" style="margin-top:100%;">
+        <p id="1" style="visibility:hidden;"> Content 1 </p>
+        <p id="2" style="visibility:hidden;"> Content 2 </p>
+        <p id="3" style="visibility:hidden;"> Content 3 </p>
+        <p id="4" style="visibility:hidden;"> Content 4 </p>
+        <p id="5" style="visibility:hidden;"> Content 5 </p>
+    </div>
+    <script type="text/javascript">
+        function showContentSection(id) {
+            switch (id) {
+                case "1":
+                    document.getElementById(id).style.visibility = "visible";
+                    break;
+                case "2":
+                    document.getElementById(id).style.visibility = "visible";
+                    break;
+                case "3":
+                    document.getElementById(id).style.visibility = "visible";
+                    break;
+                case "4":
+                    document.getElementById(id).style.visibility = "visible";
+                    break;
+                case "5":
+                    document.getElementById(id).style.visibility = "visible";
+                    break;
+                default:
+                    document.write("Your choice of element is not available");
+            }
+        }
+    </script>
+    <!-- <script>
+        function showContentSection(id) {
+            var listOfIds = ["1", "2", "3", "4", "5"];
+            for (let i = 0; i < listOfIds.length; i++) {
+                if (listOfIds[i] == id) {
+                    document.getElementById(id).style.visibility = true;
+                } else {
+                    document.getElementById(id).style.visibility = false;
+                }
+
+            }
+        }
+    </script> -->
+    <!-- <img src="th.jpeg" alt="Otters Playing" width="50%" height="50%">
+    <p style="font-size:10vw; max-width:70%; max-height:70%;">lorem ipsum dolor sit amet, consectetur adipisicing lorem, sed diam nonum</p> -->
+</body>
+
+</html>

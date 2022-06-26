@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Example Webpage</title>
+    <meta name="author" content="John Smith">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- <meta http-equiv="refresh" content="5; http://192.168.0.170"> -->
+    <base href="http://192.168.0.170">
+
+</head>
+
+<body>
+    <main>
+        <h1>Main Header</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipis</p>
+        <meter value="0.5"></meter>
+        <progress value="40" max="100"></progress>
+        <time>5:00</time>
+        <p>The meeting holds on <time datetime="2022-06-05 20:00">Valentine</time></p>
+        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+        <p>Very<wbr>looooooooonnnnnnnngggggggg<wbr>example<wbr>wooorrrrrrrlllllllddddd</p>
+        <style>
+            thead {
+                background-color: gray;
+            }
+            
+            tbody {
+                color: blue;
+            }
+            
+            tfoot {
+                font-size: 10px;
+                font-style: italic;
+            }
+        </style>
+        <table>
+            <caption>My Table</caption>
+            <thead>
+                <th colspan="2">Heading 1</th>
+                <th>Heading 2</th>
+                <!--<th>Heading 3</th>-->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Col 1</td>
+                    <td>Col 2</td>
+                    <td>Col 3</td>
+                </tr>
+                <tr>
+                    <td>Col 4</td>
+                    <td>Col 5</td>
+                    <td>Col 6</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer1</td>
+                    <td>Footer2</td>
+                    <td>Footer3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Forms</h1>
+        <form style="width: 400px; height: 500px; border: 5px solid red; background-color:purple">
+            <br>
+            <br> Enter Your first Name:
+            <input type="text" id="fname">
+            <br> Enter Your Last Name:
+            <input type="text" id="lname">
+            <br> Pick a Color You Like :
+            <input type="color" id="mycolor">
+            <br> Enter Your Range of Your Choice:
+            <input type="range" id="myrange">
+            <br> Enter a Check:
+            <input type="checkbox" id="mycheck">
+            <br> Select a File to Upload:
+            <input type="file" id="myfile">
+            <br> Choose a Date:
+            <input type="date" id="mydate">
+            <br>
+            <button type="submit">Submit</button>|
+            <button type="reset">Cancel</button>|
+            <button type="button" onclick="displayDetails()">Click Here</button>
+
+        </form>
+        <script>
+            function displayDetails() {
+                var f_name = document.getElementById("fname").value;
+                var l_name = document.getElementById("lname").value;
+                alert("Your name is " + f_name + " " + l_name)
+
+
+            }
+        </script>
+        <video id="myvideo" width="500" height="400" controls loop poster="th.jpeg" preload="auto">
+        <source src = "/home/ndajah/dwhelper/Wendy Shay - Survivor (Official Video) - YouTube.mp4">
+    </video>
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/N2Y52fCxM_Q? autoplay=1&allowfullscreen=1">
+        
+    </iframe>
+        <audio src="sakis.mp3" type="audio/mp3" controls loop>
+
+    </audio>
+        <iframe src="https://www.w3.org" width="1000" height="500" frameborder="1">
+
+    </iframe>
+        <br>
+        <hr>
+        <p><abbr title="Buy One Get One Free">BOGO</abbr>An abbreviation of the sales items</p>
+        <address>
+        Website by John Smith <br>
+        You can contact him at <a href="http://www.webcreator/johnsnith.com">John Smith's Contact Link </a>
+
+
+        <p>Example text</p>
+        <p><bdo dir="rtl">Example text content</bdo></p>
+        <p>Example<del>Text</del></p>
+        <p>Example<ins>Text</ins></p>
+        <p>Example<del>Text</del></p>
+        <p><dfn>Web Development:  </dfn>Writing code to create web pages </p>
+        <p>Use the keyboard shortcut <kbd>Ctrl + C</kbd></p>
+        <p>The computer printed the output: <samp>The result = 5</samp></p>
+        <p>My favorite web programming language is <s>HTMl </s> CSS</p>
+        <q>This is a formatted quote</q>
+
+    </address>
+
+        <script>
+            alert("example code. Javascript is runnng");
+        </script>
+        <noscript>
+            You will see this message if you disable Javascript
+           
+    </noscript>
+
+        <dialog open>Example Dialog Tag in browser</dialog>
+        <p title="THIS is the third tab" tabindex="3" dir="rtl" lang="es" style="color:brown">Texto de ejemplo</p>
+        <p title="second tab" tabindex="2" dir="rtl" lang="es" style="color:brown">Texto de ejemplo</p>
+        <p contenteditable="true" title=" first tab " tabindex="1 " dir="rtl " lang="es " style="color:brown ">Texto de ejemplo</p>
+
+
+
+
+</body>
+
+
+</html>

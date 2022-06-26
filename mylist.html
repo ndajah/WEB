@@ -1,0 +1,142 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- <script src="" async defer></script>
+        <script> 
+            prompt("Enter a number")
+            
+        </script> -->
+    <script>
+        let theNumber = Number(prompt("Enter a number:"));
+        for (let i = 0; i < theNumber; i++) {
+            for (j = 0; j <= i; j++) {
+                document.write("#" + " ");
+
+            }
+            document.write("<br>");
+        }
+    </script>
+    <script>
+        for (let i = 0; i < 100; i++) {
+            {
+                if (i % 3 == 0) {
+                    document.write("Fizz" + " ");
+
+                }
+                if (i % 5 == 0) {
+                    document.write("Buzz" + " ");
+
+                }
+                if ((i % 3 == 0) && (i % 5 == 0)) {
+                    document.write("FizzBuzz" + " ");
+
+                }
+                if (i % 3 == 0 || i % 5 == 0) {
+                    continue;
+                }
+
+            }
+            document.write(i + " ");
+        }
+    </script>
+    <script>
+        document.write("<br>");
+        for (let i = 0; i < 7; i++) {
+
+            if (i % 2 == 0) {
+                document.write("\t")
+                for (let j = 0; j < 8; j++) {
+                    document.write("#" + "\t");
+                }
+            } else if (i % 2 != 0) {
+                for (let j = 0; j < 8; j++) {
+                    document.write("#" + "\t");
+                }
+            }
+
+            document.write("<br>");
+        }
+    </script>
+
+
+    <script>
+        const square = function(x) {
+            return x * x;
+        };
+        const makeNoise = function() {
+            <!-- document.write("Pling!"); -->
+            ;
+            return "Pling!";
+        }
+        const power = function(base, exponent) {
+            let result = 1;
+            for (let i = 0; i < exponent; i++) {
+                result *= base;
+            }
+            return result;
+        };
+
+        function cube(x) {
+            return x * x * x;
+        }
+
+        function future() {
+            return "You will never have flying saucers";
+        }
+        const Factorial = (x) => {
+            let fact = 1;
+            for (let i = 1; i <= x; i++) {
+                fact *= i;
+            }
+            return fact;
+        }
+        const square1 = (x) => {
+            return x * x;
+        };
+        const square2 = x => x * x;
+        const horn = () => document.write("Toot");
+    </script>
+
+    <script>
+        var x = square(4);
+        document.write(square(4) + "\n");
+        document.write("<br>");
+        document.write(makeNoise());
+        document.write("<br>");
+        document.write(power(5, 10));
+        document.write("<br>");
+        document.write(cube(5));
+        document.write("<br>");
+        document.write("The future says: ", future());
+        document.write("<br>");
+        document.write(Factorial(10));
+        document.write("<br>");
+        document.write(square1(5));
+        document.write("<br>");
+        document.write(square2(7));
+        document.write("<br>");
+        horn();
+    </script>
+
+</body>
+
+</html>
